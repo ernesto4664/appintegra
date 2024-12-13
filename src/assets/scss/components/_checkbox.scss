@@ -1,0 +1,84 @@
+.checkbox {
+  &--default {
+    $component: &;
+
+    &__input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+
+      &:checked + #{$component}__label > #{$component}__icon {
+        border-color: white;
+        background-color: white;
+        animation: zoom-in-out 250ms ease;
+      }
+
+      &:checked
+        + #{$component}__label
+        > #{$component}__icon
+        > #{$component}__svg {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:checked + #{$component}__label > #{$component}__text {
+        color: white;
+      }
+    }
+
+    &__label {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+      user-select: none;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 250ms ease;
+
+      &--disabled {
+        opacity: 0.55;
+        cursor: progress;
+      }
+    }
+
+    &__icon,
+    &__text {
+      transform: translate3d(0, 0, 0);
+      vertical-align: middle;
+    }
+
+    &__icon {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      border: 1px solid white;
+      transform: scale(1);
+      transition: all 250ms ease;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    &__svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(0, 0, 0) translate(-50%, -50%);
+      fill: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 250ms ease;
+    }
+
+    &__text {
+      padding-left: 10px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: white;
+      transition: all 250ms ease;
+    }
+  }
+}

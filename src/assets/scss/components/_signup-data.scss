@@ -1,0 +1,12 @@
+.signup-data__separator {
+  border-bottom: 1px solid rgba($color-04, 0.4);
+  margin-bottom: rem(25px);
+  padding-bottom: rem(25px);
+}
+
+.signup-data,
+.user-data {
+  .form-control--prefix {
+    padding-left: rem(55px);
+  }
+}

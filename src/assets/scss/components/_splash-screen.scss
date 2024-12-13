@@ -1,0 +1,25 @@
+.splash-screen {
+  background-image: linear-gradient(123deg, #73BB32 5%, #36A747 99%);
+  // background-image: linear-gradient(123deg, $primary 0%, $secondary 100%);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+// .splash-screen__bakground {
+//   background-image: url('./../../assets/images/splash-background.jpg');
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 100%;
+//   left: 0;
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+// }
+
+// .splash-screen__branding {
+
+// }

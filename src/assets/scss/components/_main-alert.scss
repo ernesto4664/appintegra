@@ -1,0 +1,87 @@
+.main-alert {
+  // text-align: center;
+
+  .modal-dialog {
+    @include mq($from: large) {
+      max-width: 730px;
+    }
+  }
+
+  .modal-content {
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+.main-alert__header {
+  background: $secondary;
+  padding: 50px 20px 20px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  @include mq($from: large) {
+    padding: 60px 60px 30px;
+  }
+
+  &:before {
+    background-image: url('../../images/ic-mountain-background.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.main-alert__title {
+  color: $white;
+  text-transform: none;
+}
+
+.main-alert__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.main-alert__content {
+  color: #353A45;
+  font-size: 17px;
+  padding: 30px 20px;
+
+  @include mq($from: large) {
+    padding: 50px 60px;
+  }
+
+  .text {
+    @include mq($from: large) {
+      font-size: 18px;
+    }
+  }
+
+  small {
+    color: $secondary;
+    font-size: 14px;
+    font-weight: inherit;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.main-alert__button {
+  margin-top: 40px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

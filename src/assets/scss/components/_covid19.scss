@@ -1,0 +1,67 @@
+.view--covid {
+  color: #505050;
+}
+
+.covid19 {
+  background-color: $white;
+  border-radius: rem(10px 10px 0 0);
+  margin-top: rem(-10px);
+
+  .form-control-plaintext {
+    color: #505050;
+    line-height: 1;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .custom-control .custom-control-label {
+    font-size: rem(14px);
+    line-height: 1.3;
+
+    &:before,
+    &:after {
+      top: 0;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label:before {
+    background-color: $color-11;
+    border-color: $color-11;
+  }
+}
+
+.covid19__label {
+  line-height: 1;
+  width: rem(90px);
+}
+
+.covid19__actions {
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    max-width: 48%;
+  }
+}
+
+.covid19__options {
+  .button--section {
+    min-height: rem(52px);
+
+    .button__icon {
+      font-size: rem(16px);
+      margin-left: rem(5px);
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  .form-control {
+    min-height: rem(52px);
+  }
+}
+
+.covid_final .button {
+  border-color: $color-11;
+  box-shadow: none;
+}

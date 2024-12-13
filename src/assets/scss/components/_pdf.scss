@@ -1,0 +1,104 @@
+.pdf-single {
+  position: relative;
+}
+
+.pdf-single__bar {
+  display: flex;
+}
+
+.pdf-single__info {
+  display: flex;
+  align-items: center;
+  font-size: rem(14px);
+  letter-spacing: rem(0.58px);
+  line-height: 1.1;
+
+  .material-icons {
+    font-size: rem(20px);
+    margin-right: rem(15px);
+  }
+}
+
+.pdf-single__button {
+  color: $white;
+  display: flex;
+  align-content: center;
+  min-height: rem(60px);
+  padding: rem(5px 20px);
+  width: 50%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
+
+  .button__text {
+    font-size: rem(12px);
+    text-transform: none;
+  }
+
+  .button__icon {
+    font-size: rem(18px);
+    margin: 0 0 rem(5px);
+    width: 100%;
+  }
+}
+
+.pdf-single__viewer {
+  height: rem(550px);
+  position: relative;
+
+  iframe {
+    height: 0;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    width: 0;
+  }
+}
+
+.pdf-single--salary {
+  .pdf-single__info .material-icons {
+    color: $color-06;
+  }
+
+  .pdf-single__button {
+    &:nth-child(1) {
+      background-color: $color-06;
+      border-radius: 4px 0 0 4px;
+
+      &:active {
+        background-color: darken($color-06, 5%);
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: darken($color-06, 10%);
+      border-radius: 0  4px 4px 0;
+
+      &:active {
+        background-color: darken($color-06, 15%);
+      }
+    }
+  }
+}
+
+.pdf-single--certificate {
+  .pdf-single__info .material-icons {
+    color: $color-05;
+  }
+
+  .pdf-single__button {
+    &:nth-child(1) {
+      background-color: $color-05;
+      border-radius: 4px 0 0 4px;
+    }
+
+    &:nth-child(2) {
+      background-color: darken($color-05, 10%);
+      border-radius: 0  4px 4px 0;
+    }
+  }
+}

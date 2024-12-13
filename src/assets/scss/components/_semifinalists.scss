@@ -1,0 +1,35 @@
+.semifinalists__filter {
+  margin-bottom: 30px;
+  position: relative;
+
+  .button {
+    bottom: 10px;
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.semifinalists-empty {
+  text-align: center;
+}
+
+.semifinalists-empty__icon {
+  background-color: $color-04;
+  border-radius: 50%;
+  color: $body-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin: 30px auto;
+  width: 120px;
+
+  .material-icons {
+    font-size: 48px;
+  }
+}
+
+.semifinalists-empty__text {
+
+}

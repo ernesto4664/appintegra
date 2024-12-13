@@ -1,0 +1,46 @@
+.modal-backdrop {
+  background: rgba(20, 20, 20, 0.78);
+  opacity: 1;
+}
+
+.modal-dialog {
+  margin: rem(15px);
+}
+
+.modal-content {
+  border: 0;
+  border-radius: rem(4px);
+  box-shadow: 0 20px 40px 0 rgba($black, 0.25);
+  padding: rem(0 15px);
+}
+
+.modal-header {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.modal-header .close {
+  background-color: $primary;
+  border-radius: 50%;
+  color: $white;
+  height: rem(48px);
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  right: rem(15px);
+  top: 0;
+  transform: translateY(-100%);
+  width: rem(48px);
+}
+
+.modal-title {
+  @extend .title;
+  @extend .title--s;
+  text-align: center;
+  width: 100%;
+}
+
+.modal-body {
+  padding-left: 0;
+  padding-right: 0;
+}

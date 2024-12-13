@@ -1,0 +1,105 @@
+.video-window {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999;
+  
+  .video-overview,
+  .video-overview iframe,
+  .video-overview video {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .video-overview {
+    background-color: transparent;
+    
+    &:before {
+      background-color: $black;
+      bottom: 0;
+      content: '';
+      height: 100%;
+      left: 0;
+      margin: auto;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: 600ms ease;
+      visibility: hidden;
+      width: 100%;
+    }
+    
+    iframe {
+      display: none;
+      
+      @include mq($from: large) {
+        height: 130%;
+        padding: 0 17.5%;
+        top: -15%;
+      }
+    }
+  }
+  
+  .video-close {
+    appearance: none;
+    background-color: $primary;
+    border: none;
+    border-radius: 0;
+    color: $white;
+    font-size: 20px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 300ms;
+    width: 50px;
+    z-index: 2;
+    
+    @include mq($from: large) {
+      height: 60px;
+      width: 60px;
+    }
+    
+    i {
+      display: block;
+      font-size: 24px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+    
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+    
+    .video-overview {
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      iframe,
+      video {
+        display: block;
+        animation: videoIframe .4s .5s ease both;
+      }
+    }
+  }
+}

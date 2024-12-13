@@ -1,0 +1,147 @@
+.last {
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.background-blue {
+  background-color: $color-01;
+  color: $white;
+}
+
+.background-green {
+  background-color: $color-03;
+  color: $white;
+}
+
+.background-green-dark {
+  background-color: $color-11;
+  color: $white;
+}
+
+.background-purple {
+  background-color: $color-05;
+  color: $white;
+}
+
+.background-turquoise {
+  background-color: $color-07;
+  color: $white;
+}
+
+.pt-header {
+  padding-top: rem(70px) !important;
+}
+
+// .background {
+//   background-attachment: scroll;
+//   background-position: 50%;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 100%;
+//   opacity: 0;
+//   width: 100%;
+  
+//   &.background--loaded {
+//     opacity: 1;
+//     transition: opacity 1000ms ease-in-out;
+//     z-index: inherit;
+//   }
+  
+//   img {
+//     display: none;
+//     height: auto;
+//     max-width: 100%;
+//     opacity: 0;
+//     visibility: hidden;
+//   }
+// }
+
+// .image-shadow {
+//   box-shadow: 0 30px 40px 0 rgba($black, 0.2);
+// }
+
+// .max-container-width {
+//   margin-right: auto;
+//   margin-left: auto;
+//   max-width: 1350px;
+//   width: 100%;
+// }
+
+// .max-content-width {
+//   margin-right: auto;
+//   margin-left: auto;
+//   max-width: 760px;
+//   width: 100%;
+// }
+
+// .half-background-gray {
+//   position: relative;
+//   z-index: 1;
+
+//   &:after {
+//     background-color: $color-04;
+//     bottom: -9999px;
+//     content: '';
+//     height: 100%;
+//     left: -9999px;
+//     position: absolute;
+//     right: -9999px;
+//     top: 100px;
+//     z-index: -1;
+//   }
+// }
+
+.embed-responsive {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.embed-survey {
+  background-color: $white;
+  box-shadow: 0 20px 40px 0 rgba($black, 0.1);
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 135%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.w-38 {
+  width: 38% !important;
+}

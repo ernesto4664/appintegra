@@ -1,0 +1,28 @@
+.reason-bullet {
+  color: $color-08;
+  cursor: pointer;
+}
+
+.reason-bullet--selected {
+  color: $primary;
+
+  .reason-bullet__circle {
+    background-color: $primary;
+    border-color: $primary;
+  }
+}
+
+.reason-bullet__circle {
+  background-color: $white;
+  border: 1px solid $color-04;
+  border-radius: 50%;
+  display: inline-block;
+  height: rem(22px);
+  margin-right: rem(10px);
+  vertical-align: middle;
+  width: rem(22px);
+}
+
+.reason-bullet__label {
+  color: inherit;
+}

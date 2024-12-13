@@ -1,0 +1,98 @@
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-7%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes videoCircle{
+  0%{
+    transform: scale(.001);
+  }
+  100%{
+    transform: scale(1.6);
+    visibility: visible;
+  }
+}
+
+@keyframes videoIframe{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes integritoLoading {
+  0% {
+    opacity: 0.25;
+    transform: scale3d(0.9, 0.9, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    opacity: 0.25;
+    transform: scale3d(0.9, 0.9, 1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.25;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    overflow: 0.5;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+.animation {
+  visibility: hidden;
+
+  &.animation-in {
+    visibility: visible;
+    animation: slideUp 600ms ease 0ms 1 normal both;
+  }
+}

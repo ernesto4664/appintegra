@@ -1,0 +1,74 @@
+.swal-overlay {
+  background-color: rgba(20, 20, 20, 0.8);
+}
+
+.swal-modal {
+  padding: rem(25px);
+  width: calc(100% - 30px);
+}
+
+.swal-icon:first-child {
+  margin-top: rem(45px);
+}
+
+.swal-title {
+  color: $color-08;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: rem(0.67px);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.swal-footer {
+  border-top: 1px solid rgba(151, 151, 151, 0.45);
+  margin-top: rem(30px);
+  padding: rem(25px 0 0);
+  text-align: center;
+}
+
+.swal-button-container {
+  margin: rem(0 5px);
+}
+
+.swal-button {
+  border-radius: rem(28px);
+  box-shadow: 0 10px 20px 0 rgba($black, 0.2);
+  color: $white;
+  font-size: rem(15px);
+  font-weight: 700;
+  letter-spacing: rem(1px);
+  line-height: 1;
+  min-height: rem(56px);
+  padding: rem(10px 60px 10px 30px);
+  transition: 500ms ease;
+  text-transform: uppercase;
+
+  &:after {
+    @extend .material-icons;
+    content: 'arrow_forward';
+    font-size: 1rem;
+    position: absolute;
+    right: rem(30px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:focus {
+    box-shadow: 0 10px 20px 0 rgba($black, 0.2);
+    outline: none;
+  }
+}
+
+.swal-button--confirm {
+  background-color: $color-06;
+
+  &:active,
+  &:not([disabled]):hover {
+    background-color: lighten($color-06, 10%);
+  }
+
+  &:focus {
+    background-color: $color-06;
+  }
+}

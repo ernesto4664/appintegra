@@ -1,0 +1,35 @@
+.jury {
+  .archive__list {
+    margin-bottom: -40px;
+
+    @include mq($from: large) {
+      margin-bottom: -80px;
+    }
+  }
+
+  .archive__item {
+    margin-bottom: 40px;
+
+    @include mq($from: large) {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.bases {
+  .archive__list {
+    margin-bottom: -30px;
+
+    @include mq($from: large) {
+      margin-bottom: 0;
+    }
+  }
+
+  .archive__item {
+    margin-bottom: 30px;
+
+    @include mq($from: large) {
+      margin-bottom: 0;
+    }
+  }
+}

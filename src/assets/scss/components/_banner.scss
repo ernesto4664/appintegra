@@ -1,0 +1,66 @@
+.banner {
+  height: 320px;
+  margin: 0 -20px;
+  position: relative;
+  text-align: center;
+
+  @include mq($from: medium) {
+    margin: 0;
+  }
+
+  @include mq($from: large) {
+    height: 355px;
+  }
+}
+
+.banner--primary {
+  background-color: $primary;
+}
+
+.banner--secondary {
+  background-color: $secondary;
+}
+
+.banner__background {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.banner__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px 30px;
+  position: relative;
+
+  @include mq($from: large) {
+    padding: 40px;
+  }
+}
+
+.banner__label {
+  color: $white;
+}
+
+.banner__title {
+  color: $white;
+
+  span {
+    color: $primary;
+  }
+}
+
+.banner__social {
+  margin-top: 25px;
+}
+
+.banner__button {
+  margin-top: 20px;
+}

@@ -1,0 +1,45 @@
+.user-data {
+  list-style: none;
+  margin-bottom: rem(15px);
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.user-data--editable {
+  padding-right: rem(40px);
+}
+
+.user-data--editing {
+  padding-right: 0;
+}
+
+.user-data__icon {
+  color: $primary;
+  font-size: 1rem;
+  left: 0;
+  position: absolute;
+  top: rem(2px);
+}
+
+.user-data__label {
+  letter-spacing: rem(1px);
+  line-height: 1.4;
+  padding-left: rem(25px);
+
+  span {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.user-data__edit {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

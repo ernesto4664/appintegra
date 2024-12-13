@@ -1,0 +1,56 @@
+.new-bar {
+  margin-bottom: -100px;
+  transform: translateY(-100%);
+  @include mq($until: 600px) {
+    margin-bottom: 0;
+    transform: translateY(0);
+    margin-top: 20px;
+  }
+}
+
+.new-bar__content {
+  background-color: $color-04;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  @include mq($until: 600px) {
+    display: block;
+  }
+}
+
+.new-bar__back{
+  @include mq($until: 600px) {
+    margin-bottom: 10px;
+  }
+}
+
+.new-bar__source {
+
+  @include mq($until: 600px) {
+    display: block;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .label {
+    text-transform: none;
+  }
+
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 1.23px;
+    text-transform: uppercase;
+  }
+
+  .material-icons {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}

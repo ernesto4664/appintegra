@@ -1,0 +1,55 @@
+.tutorial {
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px 0 rgba(90, 90, 93, 0.25);
+  overflow: hidden;
+  position: relative;
+}
+
+.tutorial__collapse {
+  flex-wrap: nowrap;
+  font-size: 1em;
+  justify-content: flex-start;
+  padding: rem(18px 50px 18px 16px);
+  position: relative;
+  text-align: left;
+  text-transform: none;
+
+  &:after {
+    @extend .material-icons;
+    color: $primary;
+    content: 'add';
+    display: block;
+    position: absolute;
+    right: rem(12px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.tutorial__label {
+  color: #5A5A5D;
+  opacity: 0.6;
+  font-size: rem(12px);
+  font-weight: 400;
+  letter-spacing: rem(0.5px);
+  text-transform: uppercase;
+}
+
+.tutorial__content {
+  max-height: 0;
+  opacity: 0;
+  transition: 400ms;
+}
+
+.tutorial--active {
+  .tutorial__collapse:after {
+    content: 'remove';
+  }
+
+  .tutorial__content {
+    max-height: 1000px;
+    opacity: 1;
+    transition: 700ms ease;
+  }
+}

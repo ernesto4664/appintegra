@@ -1,0 +1,23 @@
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading__label {
+  display: block;
+  font-size: rem(14px);
+  letter-spacing: rem(1px);
+  opacity: 0.6;
+  margin: 0;
+  width: 100%;
+}
+
+.heading--light {
+  color: $white;
+
+  .title {
+    color: inherit;
+  }
+}

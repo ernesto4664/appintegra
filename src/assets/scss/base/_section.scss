@@ -1,0 +1,112 @@
+.section {
+  padding-bottom: rem(25px);
+  padding-top: rem(25px);
+}
+
+.section--light {
+  background-color: #ebf1ee;
+}
+
+.section--lighter {
+  background-color: rgba(235, 241, 238, 0.5);
+}
+
+.section--white {
+  background-color: $white;
+}
+
+.blue-shape {
+  background-image: url('../../assets/images/background-blue-shape.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: rem(432px);
+  left: 0;
+  position: absolute;
+  top: rem(-30px);
+  width: 100%;
+  z-index: -1;
+}
+
+.background-shape {
+  height: rem(520px);
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: rem(-120px);
+  width: 100%;
+  z-index: -1;
+
+  @include mq($from: 400px) {
+    height: rem(480px);
+    top: rem(-50px);
+  }
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.background-shape__inner {
+  margin-left: -10%;
+  width: 120%;
+
+  @include mq($from: 400px) {
+    margin-left: -5%;
+    width: 110%;
+  }
+}
+
+.red-shape {
+  background-image: url('../../assets/images/background-red-shape.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: rem(235px);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.orange-shape {
+  background-image: url('../../assets/images/background-orange-shape.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: rem(235px);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.dark-orange-shape {
+  background-image: url('../../assets/images/background-dark-orange-shape.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: rem(235px);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.green-shape {
+  background-image: url('../../assets/images/background-green-shape.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 150% auto;
+  height: rem(334px);
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(-40px);
+  width: 100%;
+  z-index: -1;
+}

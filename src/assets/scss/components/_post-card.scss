@@ -1,0 +1,174 @@
+.benefist_card{
+  padding-left: 10px !important;
+}
+
+.post-card {
+  background-color: $white;
+  border-radius: rem(4px);
+  box-shadow: 0 10px 20px 0 rgba(90, 90, 90, 0.25);
+  min-height: rem(81px);
+  overflow: hidden;
+  position: relative;
+
+  > a {
+    display: block;
+    min-height: inherit;
+  }
+}
+
+.post-card__icon {
+  background-color: $color-02;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(22px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: rem(40px);
+
+  .material-icons {
+    font-size: inherit;
+  }
+}
+
+.post-card__image {
+  background-color: $color-01;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: rem(90px);
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.post-card__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  min-height: inherit;
+  padding: rem(10px) rem(50px) rem(10px) rem(15px);
+}
+
+.post-card__title {
+  color: #5A5A5D;
+  font-size: rem(15px);
+  font-weight: 400;
+  letter-spacing: rem(0.62px);
+  margin: rem(5px) 0 0;
+}
+
+.post-card__button {
+  position: absolute;
+  right: rem(10px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.post-card--icon {
+  padding-left: rem(40px);
+}
+
+.post-card--image {
+  padding-left: rem(90px);
+}
+
+.post-card--red {
+  .post-card__icon {
+    background-color: $color-02;
+  }
+
+  .post-card__date {
+    color: $color-02;
+  }
+}
+
+.post-card--blue {
+  .post-card__icon {
+    background-color: $color-01;
+  }
+
+  .post-card__date {
+    color: $color-01;
+  }
+}
+
+.post-card--orange {
+  .post-card__icon {
+    background-color: $color-06;
+  }
+
+  .post-card__date {
+    color: $color-06;
+  }
+
+  .post-card__image {
+    background-color: $color-06;
+  }
+}
+
+.post-card--dark-orange {
+  .post-card__icon {
+    background-color: $color-dark-orange;
+  }
+
+  .post-card__date {
+    color: $color-dark-orange;
+  }
+
+  .post-card__image {
+    background-color: $color-dark-orange;
+  }
+}
+
+.post-card--yellow {
+  .post-card__icon {
+    background-color: $color-09;
+  }
+
+  .post-card__date {
+    color: $color-09;
+  }
+
+  .post-card__image {
+    background-color: $color-09;
+  }
+}
+
+.post-card--skyblue {
+  .post-card__icon {
+    background-color: $color-10;
+  }
+
+  .post-card__date {
+    color: $color-10;
+  }
+
+  .post-card__image {
+    background-color: $color-10;
+  }
+}
+
+.post-card--salary {
+  .post-card__title {
+    text-transform: capitalize;
+  }
+}
+
+.post-card--loading {
+  @extend .animated-background;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}

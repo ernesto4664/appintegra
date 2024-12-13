@@ -1,0 +1,123 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+.view {
+  min-height: 100vh;
+  padding-bottom: rem(62px);
+}
+
+.view--general-terms {
+  padding-bottom: 0;
+}
+
+.container {
+  @include mq($from: mini, $until: large) {
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 600ms ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.integrito-loading {
+  animation: integritoLoading 1.15s ease infinite;
+  margin: 0 auto;
+  max-width: rem(90px);
+  padding: rem(40px 25px);
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.empty {
+  .material-icons {
+    font-size: rem(32px);
+  }
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+    background-position: 100% 0;
+  }
+  100%{
+    background-position: -100% 0;
+  }
+}
+
+.animated-background {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: ease;
+  background: rgb(250, 250, 250);
+  background: linear-gradient(to right, rgb(250, 250, 250) 5%, rgb(235, 235, 235) 25%, rgb(250, 250, 250) 50%);
+  background-size: 200% 100%;
+}
+
+// For switch-button styling
+.switch-button-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  .switch-button {
+    $switch-button-height: rem(26px);
+    $switch-button-color: var(--color);
+    $switch-button-border-thickness: 2px;
+    $switch-transition: all 0.3s ease-in-out;
+    $switch-is-rounded: true;
+    
+    background-color: rgba($color-01, 0.2);
+    border-radius: if($switch-is-rounded, $switch-button-height, 0);
+    cursor: pointer;
+    transition: $switch-transition;
+    width: rem(52px);
+
+    $button-side-length: calc(
+      #{$switch-button-height} - (2 * #{$switch-button-border-thickness})
+    );
+
+    .button {
+      background: $white;
+      border-radius: if($switch-is-rounded, $button-side-length, 0);
+      box-shadow: 0 4px 10px 0 rgba($color-08, 0.5);
+      height: rem(18px);
+      margin: rem(4px 5px);
+      transition: $switch-transition;
+      width: rem(18px);
+    }
+
+    &.enabled {
+      background-color: $color-01;
+
+      .button {
+        box-shadow: none;
+        transform: translateX(
+          calc(#{$button-side-length} + (2 *#{$switch-button-border-thickness}))
+        );
+      }
+    }
+  }
+
+  .switch-button-label {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,95 @@
+.app-bar {
+  position: relative;
+  z-index: 11;
+}
+
+.bar {
+  background-color: $color-03;
+  background-image: linear-gradient(151deg, $color-03 0%, #8ACF17 100%);
+  border-radius: rem(20px) rem(20px) 0 0;
+  bottom: 0;
+  color: $white;
+  left: 0;
+  padding: rem(13px) rem(10px) rem(9px);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.app {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bar__iphone {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bar__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bar__item {
+  text-align: center;
+  width: calc(100% / 3);
+}
+
+.bar__link {
+  color: inherit;
+  display: block;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
+
+  &:active {
+    color: rgba($white, 0.5);
+  }
+
+  &.router-link-exact-active {
+    font-weight: 700;
+    opacity: 1;
+  }
+}
+
+.bar__group {
+  display: inline-block;
+  position: relative;
+}
+
+.bar__notifies {
+  background-color: $danger;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px 0 #528F1A;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(12px);
+  font-weight: 700;
+  height: rem(21px);
+  position: absolute;
+  right: rem(-25px);
+  top: rem(-7px);
+  width: rem(21px);
+}
+
+.bar__icon {
+  display: block;
+  font-size: rem(18px);
+}
+
+.bar__text {
+  display: block;
+  font-size: rem(13px);
+  letter-spacing: rem(0.25px);
+  margin-top: rem(-5px);
+  text-transform: uppercase;
+}

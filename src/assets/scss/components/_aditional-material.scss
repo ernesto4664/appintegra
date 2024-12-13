@@ -1,0 +1,130 @@
+.aditional-material {
+  background-color: $white;
+  border-radius: rem(4px);
+  box-shadow: 0 10px 20px 0 rgba(90, 90, 90, 0.25);
+  min-height: rem(81px);
+  overflow: hidden;
+  position: relative;
+
+  > a {
+    display: block;
+    min-height: inherit;
+  }
+}
+
+.aditional-material__button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aditional-material__icon {
+  color: $color-06;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(22px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: rem(46px);
+
+  .material-icons {
+    font-size: inherit;
+  }
+}
+
+.aditional-material__image {
+  background-color: $color-01;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: rem(90px);
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.aditional-material__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  min-height: inherit;
+  padding: rem(10px) rem(50px) rem(10px) rem(15px);
+  padding-top: 23px;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: calc(1px/3);
+    word-break: break-all;
+  }
+
+  span {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: calc(1px/3);
+    color: #5A5A5D !important;
+  }
+}
+
+.aditional-material__title {
+  color: #5A5A5D;
+  font-size: rem(15px);
+  font-weight: 400;
+  letter-spacing: rem(0.62px);
+  margin: rem(5px) 0 0;
+}
+
+// .aditional-material__button {
+//   position: absolute;
+//   right: rem(10px);
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+.aditional-material__action {
+  color: $color-06;
+  position: absolute;
+  right: rem(16px);
+  top: 54%;
+  transform: translateY(-50%);
+}
+
+.aditional-material--icon {
+  padding-left: rem(40px);
+  padding-right: rem(46px);
+}
+
+.aditional-material--image {
+  padding-left: rem(90px);
+}
+
+.aditional-material--red {
+  .aditional-material__icon {
+    background-color: $color-02;
+  }
+
+  .aditional-material__date {
+    color: $color-02;
+  }
+}
+
+.aditional-material--loading {
+  @extend .animated-background;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}

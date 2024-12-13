@@ -1,0 +1,33 @@
+.icon-text {
+  margin: 0 auto;
+  max-width: 270px;
+  text-align: center;
+}
+
+.icon-text__image {
+  background: $primary;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  margin: 0 auto;
+  width: 170px;
+
+  img {
+    align-self: center;
+    max-width: 120px;
+  }
+}
+
+.icon-text__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.icon-text__text {
+  margin-top: 10px;
+}

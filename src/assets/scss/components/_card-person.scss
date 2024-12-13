@@ -1,0 +1,125 @@
+.card-winner {
+  position: relative;
+}
+
+.card-person {
+  background-color: $white;
+  box-shadow: 0 20px 30px 0 rgba($black, 0.1);
+  margin: 0 auto;
+  max-width: 230px;
+  text-align: center;
+}
+
+.card-person__content {
+  padding: 20px 15px;
+}
+
+.card-person__title {
+  font-family: $font-family-sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+  text-transform: none;
+}
+
+.card-person__label {
+  font-size: 12px;
+  margin: 5px 0 10px;
+  text-transform: uppercase;
+}
+
+.card-person__button {
+  .button {
+    font-size: 12px;
+  }
+  .button__icon {
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.card-winner {
+  background-color: $white;
+  box-shadow: 0 20px 30px 0 rgba($black, 0.1);
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid #EFF1F4;
+}
+
+.card-winner__content {
+  padding: 20px;
+}
+
+.card-winner__title {
+  font-family: $font-family-sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+  text-transform: none;
+  margin-bottom: 7px;
+}
+
+.card-winner__label {
+  font-size: 12px;
+  margin: 5px 0 10px;
+  text-transform: uppercase;
+}
+
+.card-winner__button {
+  padding: 10px 15px;
+  border-top: 1px solid #EFF1F4;
+  .button {
+    font-size: 12px;
+  }
+
+  .button__icon {
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.card-winner__note {
+  color: $primary;
+}
+
+.card-winner__badge {
+  background-color: $primary;
+  border-radius: 0;
+  color: $white;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 10;
+}
+
+.card-winner__badge__index {
+  background-color: $white;
+  border-radius: 0;
+  color: $primary;
+  display: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  left: 0;
+  padding: 3px 8px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 10;
+}
+
+.evaluations-list .card-winner__badge__index {
+  display: block;
+}
+
+.evaluations-list .card-winner__content {
+  padding-left: 30px;
+  padding-right: 80px;
+  padding-top: 30px;
+}

@@ -1,0 +1,29 @@
+.card-stage {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.card-stage__content {
+  margin-top: 30px;
+}
+
+.card-stage__index {
+  color: $secondary;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+.card-stage__date {
+  color: rgba($body-color, 0.75);
+  font-size: 14px;
+  letter-spacing: 0.44px;
+  margin: 10px 0;
+
+  .material-icons {
+    color: $primary;
+    font-size: 18px;
+    vertical-align: sub;
+  }
+}

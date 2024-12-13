@@ -1,0 +1,37 @@
+.parents-login {
+  background-color: #33A043;
+  border-radius: rem(12px);
+  padding: rem(15px 15px 20px);
+}
+
+.parents-login__title {
+  color: $white;
+  font-weight: 700;
+  letter-spacing: rem(0.57px);
+  line-height: 1.125;
+}
+
+.parents-login__description {
+  color: $white;
+  font-size: rem(14px);
+}
+
+.parents-login__button {
+  color: $color-03 !important;
+  font-size: rem(13px);
+  min-height: rem(38px);
+  min-width: rem(160px);
+  padding: rem(10px 20px);
+}
+
+.parents-sections {
+  .button {
+    min-height: rem(100px);
+    padding-bottom: rem(10px);
+    padding-top: rem(10px);
+  }
+
+  .button__icon {
+    font-size: rem(24px);
+  }
+}

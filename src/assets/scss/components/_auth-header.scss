@@ -1,0 +1,44 @@
+.auth-header {
+  background-color: $white;
+  border-radius: rem(0 0 50px 50px);
+  padding: rem(20px) 0 rem(40px);
+  position: relative;
+  text-align: center;
+}
+
+.auth-header__label {
+  letter-spacing: rem(1px);
+  margin-bottom: rem(10px);
+}
+
+.auth-header__logo {
+  margin: 0 auto;
+  max-width: rem(180px);
+}
+
+.auth-header__flag {
+  bottom: 0;
+  display: flex;
+  height: rem(7px);
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: rem(80px);
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 50%;
+  }
+
+  &:before {
+    background-color: $primary;
+  }
+
+  &:after {
+    background-color: $secondary;
+  }
+}

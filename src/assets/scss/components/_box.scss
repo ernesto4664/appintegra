@@ -1,0 +1,11 @@
+.box {
+  background-color: $white;
+  border-radius: rem(10px);
+  box-shadow: 0 20px 40px 0 rgba($black, 0.4);
+  overflow: hidden;
+  padding: rem(20px);
+}
+
+.box--sm-radius {
+  border-radius: rem(4px);
+}

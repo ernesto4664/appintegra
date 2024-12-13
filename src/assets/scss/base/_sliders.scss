@@ -1,0 +1,17 @@
+.slick-slider {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.slider.slick-initialized .slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+
+.slick-arrow.slick-hidden{
+  display: none !important;
+}

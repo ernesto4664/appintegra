@@ -1,0 +1,17 @@
+.date {
+  font-size: rem(12px);
+  margin: 0;
+}
+
+.date__icon {
+  font-size: inherit;
+  margin-right: rem(8px);
+  vertical-align: middle;
+}
+
+.date__text {
+  color: #5A5A5D;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+}

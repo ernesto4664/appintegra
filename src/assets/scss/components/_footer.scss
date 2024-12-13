@@ -1,0 +1,77 @@
+.footer {
+  background: #050636;
+  padding: 50px 0 0;
+
+  @include mq($from: large) {
+    // padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+.footer__label {
+  color: $white;
+  margin: 40px 0 20px;
+  text-align: center;
+
+  @include mq($from: large) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.footer__logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mq($from: large) {
+    flex-direction: row;
+  }
+
+  .branding {
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    @include mq($from: large) {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+.footer-meat {
+  padding: 15px;
+  background-color: darken(#050636, 2.5%);
+  color: $white;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  text-align: center;
+
+  a{
+    color: inherit;
+    padding-left: 50px;
+    position: relative;
+
+    &:hover {
+      color: rgba($white, 0.8);
+    }
+
+    &:before {
+      background-image: url('../../images/meat.png');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      content: "";
+      height: 18px;
+      left: 0;
+      margin-top: -8px;
+      position: absolute;
+      top: 50%;
+      width: 32px;
+    }
+  }
+}

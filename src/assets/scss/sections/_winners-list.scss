@@ -1,0 +1,24 @@
+.winners-list__list {
+  margin-bottom: -30px;
+}
+
+.winners-list__item {
+  margin-bottom: 30px;
+}
+
+.winners-list .tab{
+  ul li{
+    @include mq($until: 600px) {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      a{
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

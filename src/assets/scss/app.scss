@@ -1,0 +1,64 @@
+/**
+ * Import different sass files for the project
+ * Reference: https://sass-guidelin.es/es/#arquitectura
+ */
+
+/**
+ * Abstracts: files for handles function, mixins, and variables
+ */
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/vendor";
+@import "abstracts/animations";
+
+/**
+ * Base: files for animations, base, typography, and utilies
+ */
+@import "base/typography";
+@import "base/general";
+@import "base/helpers";
+@import "base/section";
+@import "base/buttons";
+@import "base/form";
+
+/**
+ * Components: have a single scss file for each individual component
+ */
+// @import "components/background";
+@import "components/header";
+@import "components/bar";
+@import "components/heading";
+@import "components/date";
+@import "components/page-nav";
+@import "components/post-card";
+@import "components/aditional-material";
+@import "components/new";
+@import "components/splash-screen";
+@import "components/auth";
+@import "components/auth-header";
+@import "components/login";
+@import "components/box";
+@import "components/progress-line";
+@import "components/user-data";
+@import "components/signup-data";
+@import "components/onboarding";
+@import "components/profile-header";
+@import "components/terms";
+@import "components/alert";
+@import "components/menu";
+@import "components/pdf";
+@import "components/reason-bullet";
+@import "components/tutorial";
+@import "components/contact-item";
+@import "components/notifications";
+@import "components/toasted";
+@import "components/modal";
+@import "components/banner-alert";
+@import "components/covid19";
+@import "components/certificate-box";
+@import "components/checkbox";
+
+/**
+ * Sections: files for general sections
+ */
+@import "sections/parents";

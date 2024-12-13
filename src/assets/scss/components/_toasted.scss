@@ -1,0 +1,15 @@
+.toasted-container {
+  .toasted.outline {
+    background-color: $color-02;
+    border: 0;
+    color: $white;
+    font-size: rem(14px);
+    font-weight: 700;
+    letter-spacing: rem(0.88px);
+    padding: rem(15px 20px);
+  }
+  .toasted.success {
+    background-color: $color-01;
+    color: $white !important;
+  }
+}

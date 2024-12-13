@@ -1,0 +1,18 @@
+.progress-line {
+  display: flex;
+  flex-direction: row;
+  height: rem(5px);
+  margin: rem(0 -8px);
+}
+
+.progress-line__item {
+  background-color: rgba(91, 91, 91, 0.2);
+  border-radius: rem(4px);
+  flex: 1;
+  height: 100%;
+  margin: 0 rem(8px);
+}
+
+.progress-line__item--active {
+  background-color: $primary;
+}

@@ -1,0 +1,107 @@
+.swal-modal {
+  border-radius: 0;
+  box-shadow: 0 20px 30px 0 rgba($black, 0.15);
+  max-width: 100%;
+  width: 90%;
+
+  @include mq($from: large) {
+    width: 760px;
+  }
+}
+
+.swal-modal.success .swal-title {
+  position: relative;
+
+  &:before {
+    @extend .material-icons;
+    color: $secondary;
+    content: 'playlist_add_check';
+    display: block;
+    font-size: 72px;
+    margin-bottom: 30px;
+  }
+}
+
+.swal-modal.error .swal-title {
+  position: relative;
+
+  &:before {
+    @extend .material-icons;
+    color: $secondary;
+    content: 'error_outline';
+    display: block;
+    font-size: 72px;
+    margin-bottom: 30px;
+  }
+}
+
+.swal-modal .swal-title {
+  color: $secondary;
+  font-family: $headings-font-family;
+  font-size: 30px;
+  letter-spacing: 0.72px;
+  line-height: $headings-line-height;
+  margin: 0 auto;
+  max-width: 530px;
+  text-transform: uppercase;
+}
+
+.swal-modal .swal-title:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.swal-modal .swal-text {
+  color: $body-color;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: $line-height-base;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 410px;
+  text-align: center;
+}
+
+.swal-modal .swal-footer {
+  margin-top: 20px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.swal-modal .swal-button {
+  background-color: $primary;
+  border: 0;
+  border-radius: 25px;
+  color: $white;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1.23px;
+  margin: 0;
+  max-width: 100%;
+  min-height: 50px;
+  min-width: 215px;
+  padding: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 300ms ease;
+  white-space: normal;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    outline: none;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
+}

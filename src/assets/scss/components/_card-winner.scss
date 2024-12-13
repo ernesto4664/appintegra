@@ -1,0 +1,33 @@
+.card-winner {
+
+}
+
+.card-winner__content {
+  padding: 20px 15px;
+}
+
+.card-winner__title {
+  font-family: $font-family-sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+  text-transform: none;
+}
+
+.card-winner__label {
+  font-size: 12px;
+  margin: 5px 0 10px;
+  text-transform: uppercase;
+}
+
+.card-winner__button {
+  .button {
+    font-size: 12px;
+  }
+
+  .button__icon {
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+  }
+}
